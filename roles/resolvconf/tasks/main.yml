@@ -1,0 +1,15 @@
+---
+- name: Install resolvconf package (Debian)
+  ansible.builtin.apt:
+    name: resolvconf
+    state: present
+  when: ansible_facts.os_family == "Debian"
+
+- name: Update resolvconf to use local name server
+  ansible.builtin.lineinfile:
+    dest: /etc/resolvconf.conf
+    line: name_servers=127.0.0.1
+    # yamllint disable-line rule:quoted-strings
+    regexp: "^#?name_servers="
+    create: true
+  notify: regenerate resolvconf

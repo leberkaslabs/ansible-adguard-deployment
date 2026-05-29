@@ -1,0 +1,17 @@
+---
+- name: Example Playbook
+  hosts: all
+  gather_facts: true
+
+  pre_tasks:
+    - name: Update cache (Debian)
+      ansible.builtin.apt:
+        update_cache: true
+        cache_valid_time: 600
+      when: ansible_facts.os_family == "Debian"
+
+  roles:
+    - role: adguard
+
+    - role: resolvconf
+      when: reslovconf_use_local_dns | default(true)

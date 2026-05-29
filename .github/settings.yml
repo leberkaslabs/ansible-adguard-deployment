@@ -1,0 +1,5 @@
+---
+# https://github.com/apps/settings
+repository:
+  description: Ansible playbooks for deploying AdGuard Home.
+  topics: ansible, ansible-deployment, automation, infrastructure

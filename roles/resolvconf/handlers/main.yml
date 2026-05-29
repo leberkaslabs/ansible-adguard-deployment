@@ -1,0 +1,5 @@
+---
+- name: Regenerate resolvconf
+  ansible.builtin.command: resolvconf -u
+  changed_when: true
+  listen: regenerate resolvconf
