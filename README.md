@@ -31,11 +31,8 @@ Ansible playbooks for deploying AdGuard Home.
 This project includes [Ansible Molecule](https://github.com/ansible/molecule) to streamline testing and development.
 
 ```bash
-# Run the Docker scenario explicitly
-molecule test -s docker
-
 # Run the Vagrant scenario explicitly
-molecule test -s vagrant
+molecule test
 ```
 
 Molecule will automatically create, converge, verify and destroy the test instances.
