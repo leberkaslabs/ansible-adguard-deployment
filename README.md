@@ -1,6 +1,6 @@
 # Ansible Deployment: adguard
 
-[![Ansible Lint](https://github.com/leberkaslabs/ansible-adguard-deployment/actions/workflows/ansible-lint-action.yml/badge.svg)](https://github.com/leberkaslabs/ansible-adguard-deployment/actions/workflows/ansible-lint-action.yml)
+[![Ansible Lint](https://github.com/leberkaslabs/ansible-adguard-deployment/actions/workflows/ansible-lint.yml/badge.svg)](https://github.com/leberkaslabs/ansible-adguard-deployment/actions/workflows/ansible-lint.yml)
 
 Ansible playbooks for deploying AdGuard Home.
 

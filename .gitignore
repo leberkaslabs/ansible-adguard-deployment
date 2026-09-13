@@ -5,9 +5,11 @@
 .vscode
 
 # Ignore Ansible files
-inventories/*
 !inventories/hosts.example.yml
 .ansible
 .cache
 .vault
 *.retry
+inventories/*
+roles/docker
+roles/dudecalledbro.docker

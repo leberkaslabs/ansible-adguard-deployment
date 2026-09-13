@@ -1,0 +1,6 @@
+---
+adguard_docker_image: adguard/adguardhome:latest
+
+adguard_docker_path: /opt/adguard
+adguard_docker_owner: root
+adguard_docker_group: root

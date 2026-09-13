@@ -1,5 +1,5 @@
 ---
-- name: Setup AdGuard Home
+- name: Prepare
   hosts: all
   gather_facts: true
 
@@ -11,7 +11,4 @@
       when: ansible_facts.os_family == "Debian"
 
   roles:
-    - role: dudecalledbro.adguard_docker
-
-    - role: resolvconf
-      when: (reslovconf_use_local_dns | default(true)) | ansible.builtin.bool
+    - role: dudecalledbro.docker
